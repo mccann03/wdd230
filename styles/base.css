@@ -5,6 +5,7 @@
 
 
 body {
+    background-color: aquamarine;
     color: cornsilk;
     font-family: 'Kavoon', Helvetica, sans-serif;
 }
@@ -32,13 +33,14 @@ header h1 {
 nav a {
     background-color: black;
     color:cornsilk;
-    font-size: 20px;
-    height: 20px;
-    width: 100%;
+    font-size: 43px;
+    height: 57px;
     text-decoration: none;
     text-align: center;
-    padding: 25px;
-    border-top: 1px cornsilk solid;
+    padding: 40px;
+    padding-left: 41px;
+    padding-right: 41px;
+    border: 1px  cornsilk solid;
     float: left;
 }
 
@@ -56,7 +58,6 @@ main h2 {
     color: maroon;
     background-color: aquamarine;
     text-decoration: underline dashed;
-    border-top: 400px solid aquamarine;
 }
 
 section {
@@ -84,4 +85,13 @@ footer {
     background-color:black;
     text-align: center;
     border-top: 10px maroon solid;
+}
+
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul {
+		flex: 1 1 100%;
+	}
 }
