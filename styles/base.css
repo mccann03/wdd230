@@ -90,6 +90,7 @@ footer {
 @media (min-width: 640px) {
 	nav ul {
 		display: flex;
+        justify-content: space-around;
 	}
 	nav ul {
 		flex: 1 1 100%;
