@@ -1,4 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: aquamarine;
+    color: midnightblue;
+    text-align: center;
 }
+
+hr {
+    background-color: maroon;
+    height: 40px;
+    border-top: 3px solid cornsilk;
+    border-bottom: 3px solid cornsilk;
+}
+
+#WhiteSpace {
+    background-color: midnightblue;
+    color:aquamarine;
+}
+
+#VPN {
+    color:cornsilk;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
