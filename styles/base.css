@@ -36,7 +36,6 @@ nav a {
     font-size: 43px;
     height: 57px;
     text-decoration: none;
-    text-align: center;
     padding: 40px;
     padding-left: 41px;
     padding-right: 41px;
@@ -76,6 +75,50 @@ section p {
     padding: 20px;
 }
 
+.navigate {
+    display: flex;
+	list-style: none;
+}
+
+.navigate li {
+    display: none;
+}
+
+.navigate a {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem, 0.75rem;
+}
+
+#menu.show::before {
+    content: "≡";
+}
+
+#menu.show::after {
+    content: "X";
+}
+
+.show li {
+	display: block;
+	width: 100%;
+}
+.show li a {
+	display: block;
+}
+
+.active::before {
+    content: "◯ "
+}
+
 ul {
     display:inline-block;
     text-align: center;
@@ -92,7 +135,24 @@ footer {
     border-top: 10px maroon solid;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40em) {
+    .navigate {
+        display: flex;
+    }
+
+    .navigate li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigate a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
 	nav ul {
 		display: flex;
         justify-content: space-around;
