@@ -75,13 +75,10 @@ section p {
     padding: 20px;
 }
 
-.navigate {
+/* @media (min-width: 40em) {
+*/ .navigate {
     display: flex;
 	list-style: none;
-}
-
-.navigate li {
-    display: none;
 }
 
 .navigate a {
@@ -89,7 +86,6 @@ section p {
     text-align: center;
     font-weight: 700;
 }
-
 
 #menu {
     display: block;
