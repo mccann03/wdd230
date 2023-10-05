@@ -75,8 +75,8 @@ section p {
     padding: 20px;
 }
 
-/* @media (min-width: 40em) {
-*/ .navigate {
+@media (min-width: 40em) {
+ .navigate {
     display: flex;
 	list-style: none;
 }
@@ -129,4 +129,5 @@ footer {
     background-color:black;
     text-align: center;
     border-top: 10px maroon solid;
+}
 }
