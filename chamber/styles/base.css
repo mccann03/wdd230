@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 255px);
+    grid-template-rows: repeat(12, 100px);
+    background-color: #CAD5CA;
+    color: #392D32;
+    font-family: 'playfair', serif;
+}
+
+header {
+    display: grid;
+    grid-column: 1/9;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 20px);
+    background-color:#6f00ff;
+    text-align: right;
+}
+
+.heroImage {
+    width: 1276px;
+    height: 500px;
+}
+
+nav {
+    padding-right: 40px;
+    grid-column: 6;
+    grid-row: 3;
+}
+
+.join {
+    text-align: center;
+    width: 100px;
+    height: 10px;
+    grid-column: 3;
+    grid-row: 4;
+}
+
+a {
+    background-color: #6f00ff;
+    color:#DBC8A9;
+    text-decoration: none;
+    border:#DBC8A9 solid 2px;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.events {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 8/10;
+    background-color:#392D32;
+    color: #DBC8A9;
+    border:#DBC8A9 solid 2px;
+}
+
+.weather {
+    text-align: center;
+    grid-column: 3;
+    grid-row: 8/10;
+    background-color:#392D32;
+    color: #DBC8A9;
+    border:#DBC8A9 solid 2px;
+}
+
+.advertisement {
+    text-align: center;
+    grid-column: 4;
+    grid-row: 8/10;
+    background-color:#392D32;
+    color: #DBC8A9;
+    border:#DBC8A9 solid 2px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(9, 150px);
+    grid-template-rows: repeat(6, 20px);
+    grid-column: 1/9;
+    grid-row: 12;
+    background-color: #6f00ff;
+    color: #DBC8A9;
+}
+
+.localInfoHead {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.localInfo {
+    grid-column: 1;
+    grid-row: 2/3;
+}
+
+.contactInfoHead {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.contactInfo {
+    grid-column: 4;
+    grid-row: 2/3;
+}
+
+.copyright {
+    grid-column: 1/4;
+    grid-row: 5;
+    white-space: nowrap;
+}
+
+@media (min-width: 40em) {
+    .navigate {
+        display: flex;
+    }
+
+    .navigate li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigate a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+	nav ul {
+		display: flex;
+        justify-content: space-around;
+	}
+	nav ul {
+		flex: 1 1 100%;
+	}
+}

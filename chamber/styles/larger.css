@@ -1,0 +1,88 @@
+@media screen and (max-width: 600px) {
+      *  {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        color: cornsilk;
+        font-family: 'Kavoon', Helvetica, sans-serif;
+    }
+
+    img {
+        width: 50%;
+        height: 300px;
+        grid-column: 2/11;
+        grid-row: 2/3;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(20, 100px);
+        grid-template-rows: repeat(7, 60px);
+        background-color:maroon;
+    }
+
+    header h1 {
+        font-size: 120px;
+        grid-column: 7/12;
+        grid-row: 2/5;
+    }
+
+    nav a {
+        background-color: black;
+        color:cornsilk;
+        font-size: 20px;
+        height: 20px;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        padding: 25px;
+        border-top: 1px cornsilk solid;
+        float: left;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        color: cornsilk;
+        background-color: maroon;
+        text-align: center;
+    }
+
+    main h2 {
+        color: maroon;
+        background-color: aquamarine;
+        text-decoration: underline dashed;
+        border-top: 400px solid aquamarine;
+    }
+
+    section {
+        color: cornsilk;
+        background-color: midnightblue;
+        padding-bottom: 100px;
+    }
+
+    section h3 {
+        background-color: maroon;
+    }
+
+    section p {
+        color: aquamarine;
+        background-color: midnightblue;
+        padding: 20px;
+    }
+
+    ul {
+        display:inline-block;
+        text-align: center;
+    }
+
+    footer {
+        background-color:black;
+        text-align: center;
+        border-top: 10px maroon solid;
+    }
+}
