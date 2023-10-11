@@ -3,15 +3,15 @@ const button = document.querySelector("button");
 const list = document.querySelector("#list");
 
 addEventListener("click", function () {
-    if (input.value != '') {
+    if (input.value != "") {
         const li = document.createElement("li");
         const button = document.createElement("button");
         li.textContent = input.value;
         button.textContent = "❌";
         li.append(button);
-        li.append(ul);
+        list.append(li);
         button.addEventListener("click", function () {
-            li.removeChild(ul);
+            list.removeChild(li);
             input.focus();
         });
         input.focus();
