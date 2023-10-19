@@ -51,12 +51,45 @@ main {
     color: cornsilk;
     background-color: maroon;
     text-align: center;
+    max-width: 670px;
+	margin: 0 auto;
 }
 
 main h2 {
     color: maroon;
     background-color: aquamarine;
     text-decoration: underline dashed;
+}
+
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid black;
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.heroLabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid black;
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem white;
+	opacity: 0.75;
+}
+
+.heroLabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
 }
 
 section {
