@@ -27,8 +27,8 @@
         <picture>
             <source media="(min-width:500px)" srcset="images/hero-small.webp">
             <source media="(min-width:1000px)" srcset="images/hero-medium.webp">
-            <source media="(min-width:1500px)" srcset="images/hero-large.webp">
-            <img class="heroImage" src="images/entrepreneur-1340649_1280.jpg">
+            <source media="(min-width:1200px)" srcset="images/hero-large.webp">
+            <img class="heroImage" src="images/entrepreneur-1340649_1280.webp" alt="hero" style="width:auto;">
         </picture>
         <a class="join" href="chamber/join">Join In</a>
         </section>
@@ -44,7 +44,7 @@
             <p>Wind Speed</p>
             <input type="text" id="windSpeed">
             <p>Wind Chill</p>
-            <input type="text" id="windChill">
+            <p id="windChill"></p>
         </section>
         <section class="advertisement">
             <h3>Spotlights</h3>
@@ -57,12 +57,15 @@
             <p class="contactInfo">Phone: (564)176-3275<br>Email: questions@ccc.com</p>
             <p class="copyright">&copy;Dylan Edward Dean McCann WDD 230 project 
             Last modified: <span id="modifiedDate"></span></p>
-            <img class="facebook" src="images/facebook.png">
-            <img class="twitter" src="images/twitter.png">
-            <img class="instagram" src="images/instagram.png">
+            <img class="facebook" src="images/facebook.webp">
+            <img class="twitter" src="images/twitter.webp">
+            <img class="instagram" src="images/instagram.webp">
         </footer>
         <script src="scripts/modifiedDate.js">
             document.getElementById("#modifiedDate").innerHTML;
+        </script>
+        <script src="scripts/windchill.js">
+            document.getElementById("#windchill").innerHTML;
         </script>
     </body>
 </html>
