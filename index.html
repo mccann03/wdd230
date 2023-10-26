@@ -54,7 +54,7 @@
         <section class="card">
             <h3>Information</h3>
             <p>Weather: cloudy<br><br><br>
-            Number of visits to the page:1</p>
+            Number of visits to the page:<span id="numVisit"></span></p>
         </section>
     </main>
     <footer>
@@ -64,6 +64,9 @@
     <script src="scripts/getdates.js">
         document.getElementById("#copyrightYear").innerHTML;
         document.getElementById("#lastModified").innerHTML;
+    </script>
+    <script src="scripts/numberVisits.js">
+        document.getElementById("#numVisit").innerHTML;
     </script>
 </body>
 </html>
