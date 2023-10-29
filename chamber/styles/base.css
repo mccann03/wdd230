@@ -6,7 +6,7 @@
 body {
     display: grid;
     grid-template-columns: repeat(5, 255px);
-    grid-template-rows: repeat(12, 100px);
+    grid-template-rows: repeat(20, 100px);
     background-color: #CAD5CA;
     color: #392D32;
     font-family: 'playfair', serif;
@@ -67,7 +67,10 @@ a:hover {
 }
 
 h3 {
+    color:#DBC8A9;
     background-color: #6f00ff;
+    border:#DBC8A9 solid 2px;
+    text-align: center;
 }
 
 .events {
@@ -97,12 +100,82 @@ h3 {
     border:#DBC8A9 solid 2px;
 }
 
+.discover {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(6, 300px);
+    grid-column: 1/5;
+}
+
+.discover section {
+    color:#DBC8A9;
+    background-color: #392D32;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#statistics {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#upcomeEvents {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.calendar {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.weekdays li {
+    grid-row: 1;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+}
+
+.days li {
+    grid-template-rows: 2;
+    display:inline-block;
+    width:13.6%;
+    text-align: center;
+}
+
+.discover p {
+    text-align: center;
+    padding:25px;
+}
+
+.discover figure {
+    grid-column: 4;
+}
+
+.discover img {
+    width: 350px;
+    height: 200px;
+    padding: 5px;
+}
+
+.discover img:hover {
+    box-shadow: 10px 10px 5px lightblue;
+    transform: scale(1.1);
+    transition-duration: 1s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 footer {
     display: grid;
     grid-template-columns: repeat(9, 150px);
     grid-template-rows: repeat(6, 20px);
     grid-column: 1/6;
-    grid-row: 12;
+    grid-row: 20;
     background-color: #6f00ff;
     color: #DBC8A9;
 }
@@ -157,7 +230,20 @@ footer {
     white-space: nowrap;
 }
 
-@media (min-width: 40em) {
+@media only screen and (max-width: 40em) {
+    .discover {
+        grid-template-columns: 1fr;
+    }
+
+    .discover figure {
+        grid-column: 1;
+    }
+
+    .discover section {
+        display: flex;
+        grid-column: 1;
+    }
+
     .navigate {
         display: flex;
     }

@@ -24,7 +24,86 @@
                 <a href="chamber/directory">Directory</a>
             </nav>
         </header>
-
+        <main class="discover">
+            <section id="statistics">
+                <h3>Camas Chamber of Commerce<br>Income Summary</h3>
+                <canvas id="incomeChart" style="width:100%;max-width:600px"></canvas>
+            </section>
+            <section id="upcomeEvents">
+                <h3>Upcoming Events</h3>
+                    <p>Profitability Improvement Seminar</p>
+                    <p>Businesses After Hours Discussion</p>
+            </section>
+            <section class="calendar">
+                <h3>November 2023</h3>
+                    <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+                </section>
+            <figure>
+                <img id="mad" src="images/camasDistance.webp" alt="landscape" loading="lazy">
+                <figcaption>Camas neighborhood and businesses from afar.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/CamasRiverGourgeOne.webp" alt="streetWithShops" loading="lazy">
+                <figcaption>Shops along streets of Camas in the River Gourge area.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/camasRiverGourgeTwo.webp" alt="moreStreetShops" loading="lazy">
+                <figcaption>More shops in River Gourge</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libertyTheater.webp" alt="theater" loading="lazy">
+                <figcaption>The Liberty Theater</figcaption>
+            </figure>
+            <figure>
+                <img src="images/camasNight.webp" alt="nightStreet" loading="lazy">
+                <figcaption>Camas at night.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/camasStreet.webp" alt="evenMoreShops" loading="lazy">
+                <figcaption>Even more shops in Camas</figcaption>
+            </figure>
+        </main>
         <footer>
             <h4 class="localInfoHead">Location Information</h4>
             <p class="localInfo">122nd N St<br>Camas, Washington 99843</p>
@@ -39,8 +118,12 @@
         <script src="scripts/modifiedDate.js">
             document.getElementById("#modifiedDate").innerHTML;
         </script>
-        <script src="scripts/windchill.js">
-            document.getElementById("#windchill").innerHTML;
+        <script src="scripts/incomeSummary.js">
+            document.getElementById("incomeChart").innerHTML;
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="scripts/visitDate.js">
+            document.getElementById("#lastVisit").innerHTML;
         </script>
     </body>
 </html>
