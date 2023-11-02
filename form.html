@@ -22,11 +22,12 @@
             </ul>
         </nav>
         <main>
+            <div id="message"></div>
             <form method="get" action="record.html">
                 <fieldset>
-                    <legend></legend>
+                    <legend>My Example Form</legend>
                     <label id="username">Username<input type="text" name="username" required></label>
-                    <label id="password">Password<input type="password" name="password" pattern="[A-Za-z0-9]{8, }" required></label>
+                    <label id="password1">Password<input type="password" name="password" pattern="[A-Za-z0-9]{8, }" required></label>
                     <label id="password2">Confirm Password<input type="password" name="password2" required></label>
                     <label id="email">Email<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
                     <div id="rangeValues">1</div>
@@ -55,6 +56,9 @@
         <script src="scripts/getdates.js">
             document.getElementById("#copyrightYear").innerHTML;
             document.getElementById("#lastModified").innerHTML;
+        </script>
+        <script src="scripts/confirmMatch.js">
+            document.getElementById("#message").innerHTML;
         </script>
         <script src="scripts/rangeOutput.js">
             document.getElementById("#rangeValues").innerHTML;
