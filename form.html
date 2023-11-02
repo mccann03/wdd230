@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/form.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="images/WIN_20200421_18_25_14_Pro.webp" alt="My image">
+            <h1>Dylan McCann</h1>
+        </header>
+        <nav>
+        <button id="menu" href="#"></button>
+            <ul class="navigate">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/17?lang=eng&id=11-19#p11">Scripture</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form method="get" action="record.html">
+                <fieldset>
+                    <legend></legend>
+                    <label id="username">Username<input type="text" name="username" required></label>
+                    <label id="password">Password<input type="password" name="password" pattern="[A-Za-z0-9]{8, }" required></label>
+                    <label id="password2">Confirm Password<input type="password" name="password2" required></label>
+                    <label id="email">Email<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
+                    <div id="rangeValues">1</div>
+                        <label >Page Rating<input type="range" id="pageRating" name="rating" min="1" max="10" step="1" value="1" list="rangeValues">
+                            <datalist id="rangeValues">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+            </label>
+                </fieldset>
+                <input type="submit" value="Submit My Form">
+            </form>
+        </main>
+        <footer>
+            <p> &copy;<span id="copyrightYear"></span> Dylan McCann Washington</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/getdates.js">
+            document.getElementById("#copyrightYear").innerHTML;
+            document.getElementById("#lastModified").innerHTML;
+        </script>
+        <script src="scripts/rangeOutput.js">
+            document.getElementById("#rangeValues").innerHTML;
+        </script>
+    </body>
+</html>

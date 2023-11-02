@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Camas Chamber of Commerce</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Camas chamber of commerce website homepage">
+        <meta name="author" content="Dylan McCann">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Camas chamber of commerce">
+        <meta property="og:type" content="Website">
+        <meta property="og:image" content="https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <meta property="og:url" content="https://mccann03.github.io/wdd230/chamber/">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/base.css" rel="stylesheet">
+        <link rel="icon" href ="images/chamberFavicon.ico">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/chamberLogo.webp">
+            <h1> Camas<br>Chamber of Commerce</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+            </nav>
+        </header>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Camas Chamber of Commerce Membership</legend>
+                <label id="firstName">first name<input type="text" name="fname" required></label>
+                <label id="lastName">last name<input type="text" name="lname" required></label>
+                <label id="companyPosition">company position<input type="text" name="Position" pattern="[A-Za-z \-]{7,}"></label>
+                <label id="email">email<input type="email" name="email" required placeholder="abc123@gmail.com"></label>
+                <label id="phone">mobile number<input type="tel" name="mobilePhone" required></label>
+                <label id="OrganizationName">name of your organization<input type="text" name="organizationName" required></label>
+                <label id="description">describe your organization<textarea name="organizationDescription"></textarea></label>
+                <div>membership level</div>
+                <label><input type="radio" name="membership" value="free">free membership</label>
+                <label><input type="radio" name="membership" value="bronze">bronze membership</label>
+                <label><input type="radio" name="membership" value="silver">silver membership</label>
+                <label><input type="radio" name="membership" value="gold">gold membership</label>
+                <label id="timestamp"><input type="hidden" name="timestamp"></label>
+            </fieldset>
+                <input type="submit" value="submit my form">
+            <div>Benefits</div>
+                <p>Free Membership - free, no benefits<br>Bronze Membership - $1500, $20 event discount for each employee at chamber of commerce events.<br>
+                    Silver Membership - $3000, $30 event discount for each employee at chamber of commerce events, customer support and service training.<br>
+                    Gold Membership - $4500, $40 event discount for each employee at chamber of commerce events, customer support and service training, 
+                    homepage spotlight advertisement.
+</p>
+        </form>
+        <footer>
+            <h4 class="localInfoHead">Location Information</h4>
+            <p class="localInfo">122nd N St<br>Camas, Washington 99843</p>
+            <h4 class="contactInfoHead">Contact Information</h4>
+            <p class="contactInfo">Phone: (564)176-3275<br>Email: questions@ccc.com</p>
+            <p class="copyright">&copy;Dylan Edward Dean McCann WDD 230 project 
+            Last modified: <span id="modifiedDate"></span></p>
+            <img class="facebook" src="images/facebook.webp">
+            <img class="twitter" src="images/twitter.webp">
+            <img class="instagram" src="images/instagram.webp">
+        </footer>
+        <script src="scripts/modifiedDate.js">
+            document.getElementById("#modifiedDate").innerHTML;
+        </script>
+        <script src="scripts/timestamp.js">
+            document.getElementById("#timestamp").innerHTML;
+        </script>
+    </body>
+</html>
