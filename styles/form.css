@@ -80,12 +80,23 @@ form fieldset label {
 form fieldset label input {
     display: block;
     width: 100%;
-    border: 1px solid black;
+    max-width: 35rem;
+    font-size: 16px;
+    border: 1px solid cornsilk;
     border-radius: 4px;
+    padding: .50rem;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+}
+
+form fieldset label input:required {
+    border-left: red solid 6px;
+}
+
+form fieldset label input:required:valid {
+    border-left: green solid 6px;
 }
 
 #rangeValues {
@@ -98,7 +109,7 @@ form fieldset {
     color: cornsilk;
     background-color: midnightblue;
     border-radius: 10px;
-    border: ipx solid cornsilk;
+    border: 1px solid cornsilk;
     padding: 20px;
     margin: 15px;
     -webkit-border-radius: 10px;
@@ -107,7 +118,19 @@ form fieldset {
     -o-border-radius: 10px;
 }
 
-form legend {
+#submitButton {
+    width: 96%;
+    max-width: 35rem;
+    color: cornsilk;
+    background-color: black;
+    border-radius: 1rem;
+    border: none;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 footer {
