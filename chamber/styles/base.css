@@ -21,7 +21,6 @@ h1 {
     grid-row: 1;
     grid-column: 4/7;
     color:#DBC8A9;
-    padding-right: 400px;
     text-align: center;
 }
 
@@ -32,6 +31,10 @@ header {
     grid-template-rows: repeat(5, 20px);
     background-color:#6f00ff;
     text-align: right;
+}
+
+header h1 {
+    padding-right: 400px;
 }
 
 .heroImage {
@@ -168,6 +171,117 @@ h3 {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+}
+
+form {
+    color:#392D32;
+    grid-column: 2/3;
+
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    font-size: 16px;
+    text-align: center;
+}
+
+form fieldset {
+    border:#392D32 solid 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+form fieldset label input {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+form fieldset label input:required {
+    border: red solid 2px;
+}
+
+form fieldset label input:required:valid {
+    border: green solid 2px;
+}
+
+#submit {
+    width: 100%;
+    color: cornsilk;
+    background-color:#392D32;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 5px;
+    margin-top: 15px;
+    -webkit-border-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+}
+
+#benefits {
+    color:#DBC8A9;
+    background-color:#6f00ff;
+    position: absolute;
+    left: 790px;
+    right: 290px;
+    bottom: 20px;
+    text-align: center;
+    line-height: 1.25;
+}
+
+#benefits p {
+    background-color: #392D32;
+}
+
+form fieldset label input {
+    display: block;
+    width: 100%;
+}
+
+form fieldset div label input {
+    display: inline-block;
+}
+
+form textarea {
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.thankyou {
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(6, 300px);
+}
+.thankyou section {
+    grid-column: 2/6;
+    grid-row: 1/3;
+    font-size: 21px;
+    text-align: center;
+    line-height: 5rem;
+}
+
+section {
+    background-color: #392D32;
+}
+
+section h1 {
+
+    background-color:#6f00ff;
+}
+
+section p {
+    color: #DBC8A9;
 }
 
 footer {
